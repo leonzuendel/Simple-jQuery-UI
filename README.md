@@ -6,7 +6,7 @@ simple jQuery UI theme with HTML presets, jQuery for everyone
 
 Clone the repository to your desktop or download the _.zip_ file and include the _Simple-jQuery-UI-master_ folder into your projects _root_. 
 
-! you can delete the _/demo_ folder if you don't need it.
+You can delete the _/demo_ folder if you don't need it.
 
 Include the following code snippet in the _head_ section of your **_.html_** file:
 
