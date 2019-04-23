@@ -1,6 +1,6 @@
 # Simple jQuery UI
 
-simple jQuery UI theme with HTML presets, jQuery for everyone
+simple jQuery UI theme with HTML presets, jQuery UI for everyone
 
 **jQuery and jQuery UI are already _included_ within this package.**
 
