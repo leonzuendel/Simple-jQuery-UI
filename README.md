@@ -21,4 +21,4 @@ Include the following code snippet in the _head_ section of your **_.html_** fil
     <script type="text/javascript" src="simple-jquery-ui-master/js/functions.js"></script>
 ```
 
-
+All the HTML snippets you need are available through copy & paste from the _demo site_.
