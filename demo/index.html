@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple jQuery UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/simple-jquery-ui.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <script type="text/javascript" src="../js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism/prism.css">
+    <script type="text/javascript" src="prism/prism.js"></script>
+	</head>
+
+	<body>
+
+    <div class="content">
+
+
+<h1>Simple jQuery UI</h1>
+
+<h2>Buttons</h2>
+
+<div class="grid">
+
+<div>
+  <div>
+    <button class="ui-button ui-widget ui-corner-all">Light Button</button>
+  </div>
+  <h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code1')"></button>
+  <pre><code id="code1" class="language-html">&lt;button class="ui-button ui-widget ui-corner-all"&gt;Light Button&lt;/button&gt;</code></pre>
+</div>
+
+<div>
+  <div>
+    <button class="ui-button ui-widget ui-corner-all dark">Dark Button</button>
+  </div>
+  <h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code2')"></button>
+  <pre><code id="code2" class="language-html">&lt;button class="ui-button ui-widget ui-corner-all dark"&gt;Dark Button&lt;/button&gt;</code></pre>
+</div>
+
+
+
+</div>
+
+
+
+<h2>Accordions</h2>
+
+<div class="grid">
+
+
+<div>
+  <div>
+    <h5>Accordion Style 1</h5>
+    <div class="accordion">
+  <h4>Section 1</h4>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h4>Section 2</h4>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h4>Section 3</h4>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h4>Section 4</h4>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+  </div>
+  <h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code3')"></button>
+  <pre><code id="code3" class="language-html">&lt;div class="accordion"&gt;
+&lt;h4&gt;Section 1&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h4&gt;Section 2&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+  suscipit faucibus urna.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h4&gt;Section 3&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;List item one&lt;/li&gt;
+    &lt;li&gt;List item two&lt;/li&gt;
+    &lt;li&gt;List item three&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;h4&gt;Section 4&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+  mauris vel est.
+  &lt;/p&gt;
+  &lt;p&gt;
+  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+  inceptos himenaeos.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+
+<div>
+  <div>
+    <h5>Accordion Style 2</h5>
+    <div class="accordion dark">
+  <h4>Section 1</h4>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h4>Section 2</h4>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h4>Section 3</h4>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h4>Section 4</h4>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+  </div>
+  <h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code3')"></button>
+  <pre><code id="code3" class="language-html">&lt;div class="accordion dark"&gt;
+&lt;h4&gt;Section 1&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h4&gt;Section 2&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+  suscipit faucibus urna.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h4&gt;Section 3&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;List item one&lt;/li&gt;
+    &lt;li&gt;List item two&lt;/li&gt;
+    &lt;li&gt;List item three&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;h4&gt;Section 4&lt;/h4&gt;
+&lt;div&gt;
+  &lt;p&gt;
+  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+  mauris vel est.
+  &lt;/p&gt;
+  &lt;p&gt;
+  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+  inceptos himenaeos.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+
+</div>
+
+
+
+<h2>Selecmenus</h2>
+
+<div class="grid">
+
+
+<div>
+  <div>
+    <h5>Selectmenu Style 1</h5>
+    <div><select name="selectmenu1" class="selectmenu">
+      <option selected="selected">Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select></div>
+</div>
+
+<h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code3')"></button>
+<pre><code id="code3" class="language-html">&lt;div&gt;&lt;select name="selectmenu1" class="selectmenu"&gt;
+  &lt;option selected="selected"&gt;Option 1&lt;/option&gt;
+  &lt;option&gt;Option 2&lt;/option&gt;
+  &lt;option&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+<div>
+  <div class="dark">
+    <h5>Selectmenu Style 2</h5>
+    <div><select name="selectmenu2" class="selectmenu underline">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option selected="selected">Option 3</option>
+      <option>Option 1</option>
+      <option>Option 1</option>
+    </select></div>
+</div>
+
+<h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code3')"></button>
+<pre><code id="code3" class="language-html">&lt;div class="dark"&gt;&lt;select name="selectmenu2" class="selectmenu"&gt;
+  &lt;option selected="selected"&gt;Option 1&lt;/option&gt;
+  &lt;option&gt;Option 2&lt;/option&gt;
+  &lt;option&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+<div>
+  <div>
+    <h5>Selectmenu Style 3</h5>
+    <div><select name="selectmenu3" class="selectmenu">
+      <option>Slower</option>
+      <option>Slow</option>
+      <option selected="selected">Medium</option>
+      <option>Fast</option>
+      <option>Faster</option>
+    </select></div>
+</div>
+
+<h3>HTML-Code</h3><button class="copy" onclick="copyToClipboard('#code3')"></button>
+<pre><code id="code3" class="language-html">&lt;div&gt;&lt;select name="selectmenu3" class="selectmenu"&gt;
+  &lt;option selected="selected"&gt;Option 1&lt;/option&gt;
+  &lt;option&gt;Option 2&lt;/option&gt;
+  &lt;option&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+
+</div>
+
+
+  </div>
+
+
+	</body>
+</html>

@@ -1,0 +1,171 @@
+/*CSS Template*/
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Fonts */
+
+body {
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h3 {
+  display: inline-block;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h4 {
+  display: inline-block;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+h5 {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: circle;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+
+/* Main */
+
+.content {
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+  margin-bottom: 80px;
+}
+
+.grid > div {
+  text-align: center;
+}
+
+.grid > div > div {
+  display: block;
+  margin: 0 auto;
+}
+
+.grid > div.half {
+  grid-column: 1/3;
+}
+
+.grid > div.full {
+  grid-column: 1/6;
+}
+
+pre {
+	background-color: rgb(237, 236, 236);
+	color: black;
+	text-align: left;
+	border-radius: 5px;
+	line-height: 1.4;
+  display: block;
+  width: 100%;
+}
+
+pre.css {
+	margin-top: 15px;
+}
+
+pre.css span {
+	color: rgb(221, 28, 28);
+	font-weight: bold;
+}
+
+.copy {
+  display: inline-block;
+  background-image: url('icons/copy.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Hind', sans-serif;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  width: 16px;
+  height:  16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.copy:active {
+  transform: scale(0.9);
+}
